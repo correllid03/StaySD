@@ -31,7 +31,7 @@ class Profile:
     filing: str = "single"              # "single" | "married"
     household_size: int = 1
     kids_under_5: int = 0
-    bedrooms: str = "2br"               # "1br" | "2br" | "3br"
+    bedrooms: str = "2br"               # "studio" | "1br" | "2br" | "3br" | "4br"
     job_center: str = "sorrento_valley" # key in zip_data.json job_centers
     hourly_wage_equiv: float | None = None  # default: derived from salary
     commute_days_per_month: int | None = None

@@ -10,7 +10,8 @@
   "zips": {
     "92008": {
       "name": "Carlsbad (Village/Barrio)",
-      "rent_monthly": {"1br": 2450, "2br": 3050, "3br": 4100},
+      "rent_monthly": {"studio": 1850, "1br": 2450, "2br": 3050, "3br": 4100, "4br": 5550},
+      "rent_tier_note": "studio/4br estimated from ratios pending verification",
       "rent_source": "PLACEHOLDER - pull Zillow ZORI 92008 + cross-check RentCast",
       "_verify": true,
       "sdge_monthly_est": 245,
@@ -25,7 +26,8 @@
     },
     "91910": {
       "name": "Chula Vista (Central)",
-      "rent_monthly": {"1br": 1950, "2br": 2450, "3br": 3200},
+      "rent_monthly": {"studio": 1450, "1br": 1950, "2br": 2450, "3br": 3200, "4br": 4300},
+      "rent_tier_note": "studio/4br estimated from ratios pending verification",
       "rent_source": "PLACEHOLDER - pull Zillow ZORI 91910 + cross-check RentCast",
       "_verify": true,
       "sdge_monthly_est": 215,
@@ -40,7 +42,8 @@
     },
     "92025": {
       "name": "Escondido (Central/South)",
-      "rent_monthly": {"1br": 1750, "2br": 2150, "3br": 2850},
+      "rent_monthly": {"studio": 1300, "1br": 1750, "2br": 2150, "3br": 2850, "4br": 3850},
+      "rent_tier_note": "studio/4br estimated from ratios pending verification",
       "rent_source": "PLACEHOLDER - pull Zillow ZORI 92025 + cross-check RentCast",
       "_verify": true,
       "sdge_monthly_est": 230,
@@ -51,6 +54,150 @@
         "downtown_sd": {"miles_oneway": 31, "minutes_oneway_peak": 42},
         "carlsbad_palomar": {"miles_oneway": 16, "minutes_oneway_peak": 24},
         "camp_pendleton": {"miles_oneway": 26, "minutes_oneway_peak": 34}
+      }
+    },
+    "92057": {
+      "name": "Oceanside (Inland)",
+      "rent_monthly": {"studio": 1500, "1br": 2000, "2br": 2500, "3br": 3200, "4br": 4300},
+      "rent_tier_note": "studio/4br estimated from ratios pending verification",
+      "rent_source": "PLACEHOLDER",
+      "_verify": true,
+      "sdge_monthly_est": 260,
+      "mello_roos": false,
+      "commute": {
+        "sorrento_valley": {"miles_oneway": 38, "minutes_oneway_peak": 45},
+        "kearny_mesa": {"miles_oneway": 40, "minutes_oneway_peak": 48},
+        "downtown_sd": {"miles_oneway": 45, "minutes_oneway_peak": 55},
+        "carlsbad_palomar": {"miles_oneway": 10, "minutes_oneway_peak": 16},
+        "camp_pendleton": {"miles_oneway": 8, "minutes_oneway_peak": 14}
+      }
+    },
+    "92084": {
+      "name": "Vista",
+      "rent_monthly": {"studio": 1450, "1br": 1900, "2br": 2350, "3br": 3050, "4br": 4100},
+      "rent_tier_note": "studio/4br estimated from ratios pending verification",
+      "rent_source": "PLACEHOLDER",
+      "_verify": true,
+      "sdge_monthly_est": 250,
+      "mello_roos": false,
+      "commute": {
+        "sorrento_valley": {"miles_oneway": 32, "minutes_oneway_peak": 38},
+        "kearny_mesa": {"miles_oneway": 34, "minutes_oneway_peak": 40},
+        "downtown_sd": {"miles_oneway": 40, "minutes_oneway_peak": 48},
+        "carlsbad_palomar": {"miles_oneway": 8, "minutes_oneway_peak": 14},
+        "camp_pendleton": {"miles_oneway": 15, "minutes_oneway_peak": 22}
+      }
+    },
+    "92078": {
+      "name": "San Marcos",
+      "rent_monthly": {"studio": 1650, "1br": 2200, "2br": 2750, "3br": 3600, "4br": 4850},
+      "rent_tier_note": "studio/4br estimated from ratios pending verification",
+      "rent_source": "PLACEHOLDER",
+      "_verify": true,
+      "sdge_monthly_est": 245,
+      "mello_roos": true,
+      "commute": {
+        "sorrento_valley": {"miles_oneway": 24, "minutes_oneway_peak": 28},
+        "kearny_mesa": {"miles_oneway": 26, "minutes_oneway_peak": 30},
+        "downtown_sd": {"miles_oneway": 33, "minutes_oneway_peak": 40},
+        "carlsbad_palomar": {"miles_oneway": 9, "minutes_oneway_peak": 14},
+        "camp_pendleton": {"miles_oneway": 20, "minutes_oneway_peak": 28}
+      }
+    },
+    "92126": {
+      "name": "Mira Mesa",
+      "rent_monthly": {"studio": 1700, "1br": 2250, "2br": 2800, "3br": 3600, "4br": 4850},
+      "rent_tier_note": "studio/4br estimated from ratios pending verification",
+      "rent_source": "PLACEHOLDER",
+      "_verify": true,
+      "sdge_monthly_est": 235,
+      "mello_roos": false,
+      "commute": {
+        "sorrento_valley": {"miles_oneway": 7, "minutes_oneway_peak": 12},
+        "kearny_mesa": {"miles_oneway": 9, "minutes_oneway_peak": 14},
+        "downtown_sd": {"miles_oneway": 18, "minutes_oneway_peak": 25},
+        "carlsbad_palomar": {"miles_oneway": 20, "minutes_oneway_peak": 26},
+        "camp_pendleton": {"miles_oneway": 32, "minutes_oneway_peak": 40}
+      }
+    },
+    "92117": {
+      "name": "Clairemont",
+      "rent_monthly": {"studio": 1750, "1br": 2300, "2br": 2900, "3br": 3750, "4br": 5050},
+      "rent_tier_note": "studio/4br estimated from ratios pending verification",
+      "rent_source": "PLACEHOLDER",
+      "_verify": true,
+      "sdge_monthly_est": 220,
+      "mello_roos": false,
+      "commute": {
+        "sorrento_valley": {"miles_oneway": 9, "minutes_oneway_peak": 14},
+        "kearny_mesa": {"miles_oneway": 8, "minutes_oneway_peak": 13},
+        "downtown_sd": {"miles_oneway": 12, "minutes_oneway_peak": 18},
+        "carlsbad_palomar": {"miles_oneway": 26, "minutes_oneway_peak": 32},
+        "camp_pendleton": {"miles_oneway": 38, "minutes_oneway_peak": 46}
+      }
+    },
+    "92104": {
+      "name": "North Park",
+      "rent_monthly": {"studio": 1800, "1br": 2400, "2br": 3100, "3br": 4000, "4br": 5400},
+      "rent_tier_note": "studio/4br estimated from ratios pending verification",
+      "rent_source": "PLACEHOLDER",
+      "_verify": true,
+      "sdge_monthly_est": 210,
+      "mello_roos": false,
+      "commute": {
+        "sorrento_valley": {"miles_oneway": 15, "minutes_oneway_peak": 22},
+        "kearny_mesa": {"miles_oneway": 10, "minutes_oneway_peak": 16},
+        "downtown_sd": {"miles_oneway": 4, "minutes_oneway_peak": 10},
+        "carlsbad_palomar": {"miles_oneway": 32, "minutes_oneway_peak": 40},
+        "camp_pendleton": {"miles_oneway": 44, "minutes_oneway_peak": 54}
+      }
+    },
+    "92020": {
+      "name": "El Cajon",
+      "rent_monthly": {"studio": 1300, "1br": 1750, "2br": 2200, "3br": 2900, "4br": 3900},
+      "rent_tier_note": "studio/4br estimated from ratios pending verification",
+      "rent_source": "PLACEHOLDER",
+      "_verify": true,
+      "sdge_monthly_est": 275,
+      "mello_roos": false,
+      "commute": {
+        "sorrento_valley": {"miles_oneway": 20, "minutes_oneway_peak": 26},
+        "kearny_mesa": {"miles_oneway": 13, "minutes_oneway_peak": 18},
+        "downtown_sd": {"miles_oneway": 16, "minutes_oneway_peak": 22},
+        "carlsbad_palomar": {"miles_oneway": 36, "minutes_oneway_peak": 44},
+        "camp_pendleton": {"miles_oneway": 48, "minutes_oneway_peak": 58}
+      }
+    },
+    "91913": {
+      "name": "Chula Vista (Eastlake)",
+      "rent_monthly": {"studio": 1650, "1br": 2200, "2br": 2700, "3br": 3500, "4br": 4750},
+      "rent_tier_note": "studio/4br estimated from ratios pending verification",
+      "rent_source": "PLACEHOLDER",
+      "_verify": true,
+      "sdge_monthly_est": 230,
+      "mello_roos": true,
+      "commute": {
+        "sorrento_valley": {"miles_oneway": 24, "minutes_oneway_peak": 34},
+        "kearny_mesa": {"miles_oneway": 19, "minutes_oneway_peak": 28},
+        "downtown_sd": {"miles_oneway": 13, "minutes_oneway_peak": 22},
+        "carlsbad_palomar": {"miles_oneway": 45, "minutes_oneway_peak": 55},
+        "camp_pendleton": {"miles_oneway": 58, "minutes_oneway_peak": 68}
+      }
+    },
+    "92024": {
+      "name": "Encinitas",
+      "rent_monthly": {"studio": 2050, "1br": 2700, "2br": 3400, "3br": 4500, "4br": 6100},
+      "rent_tier_note": "studio/4br estimated from ratios pending verification",
+      "rent_source": "PLACEHOLDER",
+      "_verify": true,
+      "sdge_monthly_est": 200,
+      "mello_roos": false,
+      "commute": {
+        "sorrento_valley": {"miles_oneway": 14, "minutes_oneway_peak": 18},
+        "kearny_mesa": {"miles_oneway": 17, "minutes_oneway_peak": 22},
+        "downtown_sd": {"miles_oneway": 24, "minutes_oneway_peak": 30},
+        "carlsbad_palomar": {"miles_oneway": 6, "minutes_oneway_peak": 10},
+        "camp_pendleton": {"miles_oneway": 22, "minutes_oneway_peak": 28}
       }
     }
   },

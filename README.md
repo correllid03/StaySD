@@ -22,6 +22,13 @@ python3 taxes.py         # tax calc sanity check
 
 ## Verification checklist (do before posting anywhere)
 
+**9 ZIPs pending verification**: 92057 (Oceanside), 92084 (Vista),
+92078 (San Marcos), 92126 (Mira Mesa), 92117 (Clairemont), 92104
+(North Park), 92020 (El Cajon), 91913 (Chula Vista/Eastlake), 92024
+(Encinitas) — added with placeholder rent/commute/utilities figures
+and `_verify: true`. Run the full checklist below for each before
+flipping `_verify` to `false`.
+
 1. **Taxes**: run `taxes.py` outputs against SmartAsset or ADP paycheck
    calculator for $95K and $141K single/CA. Target: within ~2%.
 2. **Rent**: replace placeholders with Zillow ZORI (free CSV) for each ZIP,
