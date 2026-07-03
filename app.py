@@ -18,6 +18,7 @@ st.set_page_config(page_title="StaySD — What's actually left over?",
 DATA = json.loads((Path(__file__).parent / "zip_data.json").read_text())
 JOB_CENTERS = {k: v["name"] for k, v in DATA["job_centers"].items()}
 ZIPS = list(DATA["zips"].keys())
+UNVERIFIED_FLAG = "DATA UNVERIFIED — placeholder numbers"
 
 # ---------------- header ----------------
 st.title("StaySD")
@@ -95,15 +96,25 @@ st.markdown(f"**Net monthly after CA + federal taxes: \\${net:,}**  \n"
 
 # ---------------- cards ----------------
 st.subheader("Comparing ZIP codes")
+unverified_count = sum(1 for z in DATA["zips"].values() if z.get("_verify"))
+st.info(f"Beta: {unverified_count} of {len(DATA['zips'])} ZIPs still use placeholder data "
+        f"pending verification — treat those comparisons as directional.")
+
 CARDS_PER_ROW = 3
 for row_start in range(0, len(results), CARDS_PER_ROW):
     row_results = results[row_start:row_start + CARDS_PER_ROW]
     cols = st.columns(len(row_results))
     for col, r in zip(cols, row_results):
         with col:
-            if r is results[0]:
-                st.success("Best fit — after valuing your time")
-            st.markdown(f"### {r.name}\n`{r.zip_code}` · RDI score **{r.rdi_score}/100**")
+            # Fixed-height slot so the badge (shown on one card only) doesn't
+            # push that card's title/table down relative to its row-mates.
+            with st.container(height=55, border=False):
+                if r is results[0]:
+                    st.success("Best fit — after valuing your time")
+
+            is_unverified = UNVERIFIED_FLAG in r.flags
+            marker = " · :gray[unverified]" if is_unverified else ""
+            st.markdown(f"### {r.name}\n`{r.zip_code}` · RDI score **{r.rdi_score}/100**{marker}")
             st.markdown(
                 f"| | |\n|---|---:|\n"
                 f"| Rent ({bedrooms}) | \\${r.rent:,} |\n"
@@ -117,7 +128,8 @@ for row_start in range(0, len(results), CARDS_PER_ROW):
             st.metric("Cash left over", f"${r.cash_leftover:,}")
             st.metric("RDI (time-adjusted)", f"${r.rdi:,}")
             for fl in r.flags:
-                st.warning(fl, icon="⚠️")
+                if fl != UNVERIFIED_FLAG:
+                    st.warning(fl, icon="⚠️")
 
 # ---------------- footnotes ----------------
 with st.expander("How the math works"):
