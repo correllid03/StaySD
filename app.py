@@ -97,8 +97,14 @@ st.markdown(f"**Net monthly after CA + federal taxes: \\${net:,}**  \n"
 # ---------------- cards ----------------
 st.subheader("Comparing ZIP codes")
 unverified_count = sum(1 for z in DATA["zips"].values() if z.get("_verify"))
-st.info(f"Beta: {unverified_count} of {len(DATA['zips'])} ZIPs still use placeholder data "
-        f"pending verification — treat those comparisons as directional.")
+total_zips = len(DATA["zips"])
+if unverified_count > 0:
+    st.info(f"Beta: {unverified_count} of {total_zips} ZIPs still use placeholder data "
+            f"pending verification — treat those comparisons as directional.")
+else:
+    st.caption(f"All {total_zips} ZIPs use sourced data — rents from listing-site medians "
+               f"(sourced/dated per ZIP), commutes from live Tuesday-8AM Maps data. "
+               f"Sources in each card's details.")
 
 CARDS_PER_ROW = 3
 for row_start in range(0, len(results), CARDS_PER_ROW):
