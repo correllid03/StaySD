@@ -1,0 +1,69 @@
+{
+  "_README": "Phase 0 hand-curated data. Every number marked _verify=true needs a human check before posting publicly. Sources to use: Zillow ZORI / RentCast for rent, Google Maps at 8am Tuesday for commute, SDG&E residential rate calc for utilities, CDSS Regional Market Rate survey for childcare.",
+  "job_centers": {
+    "sorrento_valley": {"name": "Sorrento Valley", "lat": 32.8987, "lon": -117.1958},
+    "kearny_mesa": {"name": "Kearny Mesa", "lat": 32.8339, "lon": -117.1289},
+    "downtown_sd": {"name": "Downtown San Diego", "lat": 32.7157, "lon": -117.1611},
+    "carlsbad_palomar": {"name": "Carlsbad / Palomar Airport Rd", "lat": 33.1264, "lon": -117.2764},
+    "camp_pendleton": {"name": "Camp Pendleton Main Gate", "lat": 33.2095, "lon": -117.3862}
+  },
+  "zips": {
+    "92008": {
+      "name": "Carlsbad (Village/Barrio)",
+      "rent_monthly": {"1br": 2450, "2br": 3050, "3br": 4100},
+      "rent_source": "PLACEHOLDER - pull Zillow ZORI 92008 + cross-check RentCast",
+      "_verify": true,
+      "sdge_monthly_est": 245,
+      "mello_roos": false,
+      "commute": {
+        "sorrento_valley": {"miles_oneway": 24, "minutes_oneway_peak": 32},
+        "kearny_mesa": {"miles_oneway": 28, "minutes_oneway_peak": 38},
+        "downtown_sd": {"miles_oneway": 35, "minutes_oneway_peak": 45},
+        "carlsbad_palomar": {"miles_oneway": 4, "minutes_oneway_peak": 10},
+        "camp_pendleton": {"miles_oneway": 12, "minutes_oneway_peak": 18}
+      }
+    },
+    "91910": {
+      "name": "Chula Vista (Central)",
+      "rent_monthly": {"1br": 1950, "2br": 2450, "3br": 3200},
+      "rent_source": "PLACEHOLDER - pull Zillow ZORI 91910 + cross-check RentCast",
+      "_verify": true,
+      "sdge_monthly_est": 215,
+      "mello_roos": false,
+      "commute": {
+        "sorrento_valley": {"miles_oneway": 26, "minutes_oneway_peak": 42},
+        "kearny_mesa": {"miles_oneway": 18, "minutes_oneway_peak": 30},
+        "downtown_sd": {"miles_oneway": 9, "minutes_oneway_peak": 20},
+        "carlsbad_palomar": {"miles_oneway": 42, "minutes_oneway_peak": 55},
+        "camp_pendleton": {"miles_oneway": 55, "minutes_oneway_peak": 65}
+      }
+    },
+    "92025": {
+      "name": "Escondido (Central/South)",
+      "rent_monthly": {"1br": 1750, "2br": 2150, "3br": 2850},
+      "rent_source": "PLACEHOLDER - pull Zillow ZORI 92025 + cross-check RentCast",
+      "_verify": true,
+      "sdge_monthly_est": 230,
+      "mello_roos": false,
+      "commute": {
+        "sorrento_valley": {"miles_oneway": 25, "minutes_oneway_peak": 38},
+        "kearny_mesa": {"miles_oneway": 24, "minutes_oneway_peak": 34},
+        "downtown_sd": {"miles_oneway": 31, "minutes_oneway_peak": 42},
+        "carlsbad_palomar": {"miles_oneway": 16, "minutes_oneway_peak": 24},
+        "camp_pendleton": {"miles_oneway": 26, "minutes_oneway_peak": 34}
+      }
+    }
+  },
+  "cost_constants": {
+    "vehicle_cost_per_mile": 0.70,
+    "vehicle_cost_note": "IRS standard mileage rate as all-in proxy (gas+wear+insurance). VERIFY current-year rate.",
+    "workdays_per_month": 21,
+    "time_value_factor": 0.5,
+    "time_value_note": "Commute hours valued at 50% of stated hourly wage - defensible per DOT valuation-of-travel-time convention. Tune later.",
+    "childcare_monthly_per_child_under5": 1480,
+    "childcare_note": "PLACEHOLDER - VERIFY against CDSS Regional Market Rate survey for San Diego County licensed center, full-time.",
+    "groceries_base_single": 450,
+    "groceries_per_additional_person": 300,
+    "misc_baseline_monthly": 350
+  }
+}
