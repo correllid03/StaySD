@@ -66,7 +66,7 @@ with c3:
     bedrooms = st.select_slider("Bedrooms", ["studio", "1br", "2br", "3br", "4br"], value="2br")
     if bedrooms in ("studio", "4br"):
         st.caption("Estimated tier — less verified than 1–3BR.")
-    default_wage = round(gross_monthly * 12 / 2080)
+    default_wage = max(10, round(gross_monthly * 12 / 2080))
     wage = st.number_input("Hourly wage equiv. (values your time)",
                            min_value=10, max_value=300, value=default_wage,
                            help="Defaults to your salary's implied hourly rate. "
